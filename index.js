@@ -1,18 +1,10 @@
-function takeANumber(katzDeliLine) {
-  katzDeliLine.push()
+function takeANumber(katzDeliLine, name) {
+  katzDeliLine.push(name)
 
-  return "Welcome"
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
-let line = []
-takeANumber(line) // line is [1]
-takeANumber(line) // lins is [1,2]
 
-nowServing(line)
-nowServing(line)
-
-takeANumber(line) // [3]
-////
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length == 0) {
